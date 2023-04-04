@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "name": "lab-intro-to-express-response",
+  "description": "## Getting Started",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SangunPark96/lab-intro-to-express-response.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SangunPark96/lab-intro-to-express-response/issues"
+  },
+  "homepage": "https://github.com/SangunPark96/lab-intro-to-express-response#readme"
+}
