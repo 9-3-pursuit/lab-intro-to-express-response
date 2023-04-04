@@ -23,7 +23,7 @@ app.get('/Zeus', (req, res) => {
     res.send("Release the Kraken")
 });
 
-app.get('/Fox Mulder', (req, res) => {
+app.get('/Fox-Mulder', (req, res) => {
     res.send("The truth is out there")
 });
 
