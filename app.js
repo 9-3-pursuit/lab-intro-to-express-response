@@ -20,6 +20,11 @@ app.get("/contact", (req, res) => {
   res.status(201).json({ message: "first contact app" });
 });
 
+app.get("/terminator", (req, res) => {
+  res.status(201);
+  res.send("I'll be back");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
