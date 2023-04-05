@@ -55,6 +55,11 @@ app.get("/Bruce Banner", (req, res) => {
   res.send("Don't make me angry");
 });
 
+app.get("/JJ Evans", (req, res) => {
+  res.status(201);
+  res.send("Dy-no-myte!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
