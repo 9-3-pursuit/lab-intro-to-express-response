@@ -54,7 +54,7 @@
  })
 
  function getRandomInt(){
-    return Math.floor(Math.random() * 19)
+    return Math.floor(Math.random() * magic8Responses.length)
  }
 
 
@@ -86,7 +86,6 @@ const magic8Responses = [
   app.get("/magic8", (req, res) => {
     // console.log(magic8Responses[0])
     const randomNum = getRandomInt()
-    console.log(magic8Responses[randomNum])
 
     res.send(`<h1>${magic8Responses[randomNum]}<h1>`)
   })
@@ -96,3 +95,5 @@ const magic8Responses = [
 app.listen(PORT,() => {
     console.log(`listening on port ${PORT}`)
 })
+//Export
+module.exports = app
