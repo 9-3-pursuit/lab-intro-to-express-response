@@ -64,6 +64,16 @@ app.get("/Batman", (req, res) => {
   res.send("To the Batmobile!");
 });
 
+app.get("/Hannibal Smith", (req, res) => {
+  res.status(201);
+  res.send("I love it when a plan comes together");
+});
+
+app.get("/Fraiser", (req, res) => {
+  res.status(201);
+  res.send("I'm listening");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
