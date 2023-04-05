@@ -25,6 +25,12 @@ app.get("/terminator", (req, res) => {
   res.send("I'll be back");
 });
 
+app.get("/tim-gunn", (req, res) => {
+  res.status(201);
+  res.send("Make it work");
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
