@@ -31,11 +31,15 @@ app.get("/tim-gunn", (req, res) => {
 });
 
 app.get("/Emeril", (req, res) => {
-    res.status(201);
-    res.send("Bam!");
-  });
-  
-  
+  res.status(201);
+  res.send("Bam!");
+});
+
+app.get("/Steve McGarrett", (req, res) => {
+  res.status(201);
+  res.send("Book 'em Danno!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
