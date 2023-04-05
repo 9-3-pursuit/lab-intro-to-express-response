@@ -30,7 +30,12 @@ app.get("/tim-gunn", (req, res) => {
   res.send("Make it work");
 });
 
-
+app.get("/Emeril", (req, res) => {
+    res.status(201);
+    res.send("Bam!");
+  });
+  
+  
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
