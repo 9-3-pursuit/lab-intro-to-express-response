@@ -45,6 +45,11 @@ app.get("/Coach Taylor", (req, res) => {
   res.send("Clear eyes, full hearts, can't Lose");
 });
 
+app.get("/Homer Simpson", (req, res) => {
+  res.status(201);
+  res.send("D'Oh");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
