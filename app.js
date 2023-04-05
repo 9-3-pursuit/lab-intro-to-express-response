@@ -50,6 +50,11 @@ app.get("/Homer Simpson", (req, res) => {
   res.send("D'Oh");
 });
 
+app.get("/Bruce Banner", (req, res) => {
+  res.status(201);
+  res.send("Don't make me angry");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
