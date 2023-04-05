@@ -60,6 +60,10 @@ app.get("/JJ Evans", (req, res) => {
   res.send("Dy-no-myte!");
 });
 
+app.get("/Batman", (req, res) => {
+  res.send("To the Batmobile!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
