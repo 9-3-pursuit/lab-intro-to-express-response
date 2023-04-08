@@ -4,7 +4,7 @@
   "description": "Testing for express lab",
   "main": "app.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "jest"
   },
   "author": "Harold F.",
   "license": "MIT",
