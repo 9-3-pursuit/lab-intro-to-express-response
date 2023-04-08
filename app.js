@@ -32,3 +32,12 @@ app.get("/", (req, res) => {
 // This route will only match GET requests to the path '/tim%20gunn'.
 // If a request is made to the path '/tim gunn', it will not match this route.
 // Because it does not have the %20 in it.
+
+app.get("/terminator", (req, res) => {
+  res.send("I'll be back!");
+
+  // error after this line was added
+  // because a response was already sent to the client
+  // express.js will throw an error if you try to send a response twice
+  // res.send("Hasta la vista, baby!");
+});
