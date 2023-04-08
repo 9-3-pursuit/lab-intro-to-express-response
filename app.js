@@ -70,13 +70,20 @@ const phrases = {
   jackdawson: "I'm king of the world!",
 };
 
+const speakerIMG = {
+  emeril: "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQ0zowDIrQKcGhjlOnimd5jcbV8cyx8i26dczJWPr53297lWPOFfHSI5xHGu1qi-tUYC7X0lZg1dB-9CNY",
+  stevemcgarrett: "https://64.media.tumblr.com/34ebd1cab2a50c9b643d6db623c6208e/9f90cc507d008b6d-0f/s1280x1920/2c63425d02aa1aada7b56744ff16bf288d52143d.jpg",
+};
+
 // Define a route for each name
 for (let name in phrases) {
   app.get(`/${name}`, (req, res) => {
-    res.send(phrases[name]);
+    res.send(`
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <h1 style="text-align: center;">Speaker: ${name}</h1>
+      <img src="${speakerIMG[name]}" style="width: 25%;" />
+      <h2 style="text-align: center;">Quote: ${phrases[name]}</h2>
+    </div>
+  `);
   });
 }
-
-// app.listen(3000, () => {
-//   console.log('Server is running on port 3000');
-// });
