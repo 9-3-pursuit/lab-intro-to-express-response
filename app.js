@@ -87,3 +87,36 @@ for (let name in phrases) {
   `);
   });
 }
+
+// copy paste from README.md
+const magic8Responses = [
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes - Definitely",
+  "You may rely on it",
+  "As I see it, yes",
+  "Most likely",
+  "Outlook good",
+  "Yes, and signs point to yes",
+  "Reply hazy, try again",
+  "Ask again later",
+  "Better not tell you now",
+  "Cannot predict now",
+  "Concentrate and ask again",
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no",
+  "Outlook not so good",
+  "Very doubtful",
+];
+
+// random response based on the same path
+app.get("/magic8", (req, res) => {
+  // generate a number from 0 to 19
+  const randomIndex = Math.floor(Math.random() * magic8Responses.length);
+  res.send(`<div  style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1 style="text-align: center;">${magic8Responses[randomIndex]}</h1>
+  </div>
+  `);
+});
