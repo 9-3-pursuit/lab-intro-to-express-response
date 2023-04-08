@@ -6,7 +6,6 @@ const speakerIMG = require("./data/speakerIMG");
 
 // Configuration
 const app = express();
-const PORT = 3003;
 
 // ROUTES
 app.get("/", (req, res) => {
@@ -34,11 +33,6 @@ app.get("/magic8", (req, res) => {
   <h1 style="text-align: center;">${magic8Responses[randomIndex]}</h1>
   </div>
   `);
-});
-
-// Listen
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
 });
 
 // Export

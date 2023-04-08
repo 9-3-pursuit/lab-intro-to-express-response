@@ -1,5 +1,5 @@
 // DEPENDECIES
-const app = require("../app");
+const app = require("./app");
 
 // CONFIGURATION
 const PORT = 3003;
