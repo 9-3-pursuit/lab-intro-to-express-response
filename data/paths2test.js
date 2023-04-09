@@ -92,7 +92,7 @@ const paths2test = [
     description: "Frankenstein path",
   },
   {
-    path: "/jimlowell",
+    path: "/jimlovell",
     description: "Jim Lowell path",
   },
   {
