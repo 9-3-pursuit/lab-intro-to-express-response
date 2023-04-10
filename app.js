@@ -30,26 +30,56 @@ app.get("/",(req,res)=>{
     res.status(418).send(`<h1>Hello Worldyyyy</h1>`);
 })// Create express app
 
-app.get("/tim-gunn",(req,res)=>{
-    res.send(`<h2>'Make it work'</h2>`);
+app.get("/Emeril",(req,res)=>{
+    res.send(`<h2>Bam!</h2>`);
 })// Create express app
 
-app.get("steve-mcGarrett ",(req,res)=>{
-    res.send(`<h2>'Make it work'</h2>`);
+app.get("/steve-mcGarrett",(req,res)=>{
+    res.send(`<h2>Book '\em Danno!</h2>`);
 })// Create express app
 
-app.get("coach-taylor ",(req,res)=>{
-    res.send(`<h2>'Dy-no-myte!'</h2>`);
+app.get("/coach-taylor",(req,res)=>{
+    res.send(`<h2>Clear eyes\, full hearts\, can't Lose</h2>`);
 } )// Create express app
 
-app.get("daniel-san ",(req,res)=>{
-    res.send(`<h2>'Wax on, wax off'</h2>`);
+app.get("/homer-simpson",(req,res)=>{
+    res.send(`<h2>D\'Oh</h2>`);
 } )// Create express app
+
+app.get("/bruce-banner",(req,res)=>{
+    res.send(`<h2>Don\'t make me angry</h2>`);
+})
+
+app.get("/jj-evans",(req,res)=>{
+    res.send(`<h2>Dy-no-myte!</h2>`);
+})
+
+app.get("/batman",(req,res)=>{
+    res.send(`<h2>To the Batmobile!</h2>`);
+})
+
+app.get("/hannibal-smith",(req,res)=>{
+    res.send(`<h2>I love it when a plan comes together</h2>`);
+})
+
+app.get("/fraiser",(req,res)=>{
+    res.send(`<h2>I\'m listening</h2>`);
+})
+
+app.get("/regis",(req,res)=>{
+    res.send(`<h2>Is that your final answer?</h2>`);
+})
+
 
 app.get("/magic8",(req,res)=>{
     let randomIndex = Math.floor(Math.random()*magic8Responses.length);
     res.send(`<h1>${magic8Responses[randomIndex]}</h1>`);
 } )// Create express app
+
+app.get("/magic8",(req,res)=>{
+    let randomIndex = Math.floor(Math.random()*magic8Responses.length);
+    res.send(`<h1>${magic8Responses[randomIndex]}</h1>`);
+})
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
