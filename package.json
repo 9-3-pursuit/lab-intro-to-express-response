@@ -1,0 +1,25 @@
+{
+  "name": "express-response-intro",
+  "version": "1.0.0",
+  "description": "## Getting Started",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Riya Alexander",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/riyaalexander/lab-intro-to-express-response.git"
+  },
+  "keywords": [
+    "express-response-intro"
+  ],
+  "bugs": {
+    "url": "https://github.com/riyaalexander/lab-intro-to-express-response/issues"
+  },
+  "homepage": "https://github.com/riyaalexander/lab-intro-to-express-response#readme"
+}
