@@ -1,0 +1,21 @@
+{
+  "name": "ryan-express",
+  "version": "1.0.0",
+  "description": "sdl'fkmvpoiaefvop[wqef[dswc",
+  "main": "code",
+  "scripts": {
+    "test": "code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "home"
+  },
+  "keywords": [
+    "yeti"
+  ],
+  "author": "Ryan Fodera",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
